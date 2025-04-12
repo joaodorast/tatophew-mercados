@@ -1,6 +1,5 @@
 <?php
-// config/config.php - Configurações gerais do sistema
-// Nome do sistema
+
 define('SYSTEM_NAME', 'Simple Stock');
 define('SYSTEM_VERSION', '1.0.0');
 

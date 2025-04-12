@@ -1,5 +1,5 @@
 <?php
-// index.php - Página principal do sistema
+
 // Iniciar a sessão
 session_start();
 

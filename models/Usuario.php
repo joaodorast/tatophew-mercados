@@ -1,5 +1,5 @@
 <?php
-// models/Usuario.php - Modelo para gerenciamento de usuários
+
 class Usuario {
     private $conn;
     private $table_name = "usuarios";

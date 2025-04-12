@@ -1,5 +1,5 @@
 <?php
-// install/index.php - Script de instalação do sistema
+
 // Definir constantes básicas
 define('SYSTEM_NAME', 'Simple Stock');
 define('SYSTEM_VERSION', '1.0.0');

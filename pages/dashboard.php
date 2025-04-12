@@ -1,6 +1,5 @@
 <?php
-// pages/dashboard.php - Dashboard do sistema
-// Não permitir acesso direto
+
 if (!defined('SYSTEM_NAME')) {
     header('Location: ../index.php');
     exit;
@@ -203,14 +202,6 @@ $ultimas_movimentacoes = $db->getRows($sql_ultimas_movimentacoes) ?? [];
     <?php endif; ?>
 </div>
 
-<!-- Script para inicializar gráficos se necessário -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Aqui você pode adicionar inicialização de gráficos se estiver usando bibliotecas como Chart.js
-    // Por exemplo:
-    // const ctx = document.getElementById('graficoVendas').getContext('2d');
-    // const meuGrafico = new Chart(ctx, { ... });
-});
-</script>
+
 <body>
  <html>

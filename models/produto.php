@@ -1,4 +1,4 @@
-// models/Produto.php - Modelo para gerenciamento de produtos
+
 class Produto {
     private $conn;
     private $table_name = "produtos";

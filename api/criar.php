@@ -1,5 +1,5 @@
 <?php
-// api/produtos/criar.php (continuação)
+
 if(
     !empty($data->codigo) &&
     !empty($data->nome) &&

@@ -1,6 +1,5 @@
 <?php
-// pages/login.php - Página de login do sistema
-// Não permitir acesso direto
+
 if (!defined('SYSTEM_NAME')) {
     header('Location: ../index.php');
     exit;
