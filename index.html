@@ -6,6 +6,16 @@
     <title>Tatophew Mercados - Compras Online</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+
+.social-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-link:hover {
+    color: #2563EB;
+}
+
         :root {
             --primary-color: #2563EB;
             --primary-dark: #1E40AF;
@@ -46,7 +56,7 @@
             padding: 0 20px;
         }
         
-        /* Header Styles */
+ 
         header {
             background: var(--gradient-blue);
             color: var(--white);
@@ -197,7 +207,7 @@
             box-shadow: var(--shadow-sm);
         }
         
-        /* Hero Section */
+    
         .hero {
             background-image: linear-gradient(rgba(30, 64, 175, 0.85), rgba(59, 130, 246, 0.75)), url("/api/placeholder/1200/400");
             background-size: cover;
@@ -302,7 +312,7 @@
             color: var(--primary-dark);
         }
         
-        /* Search Bar */
+      
         .search-container {
             position: relative;
             max-width: 600px;
@@ -335,7 +345,7 @@
             font-size: 20px;
         }
         
-        /* Categories Section */
+       
         .categories {
             padding: 80px 0 60px;
             position: relative;
@@ -426,8 +436,8 @@
             margin-right: 8px;
             color: var(--primary-color);
         }
-        
-        /* Featured Products */
+       
+
         .featured-products {
             padding: 80px 0;
             background-color: var(--white);
@@ -621,7 +631,7 @@
             box-shadow: var(--shadow-md);
         }
         
-        /* Special Offers */
+      
         .special-offers {
             padding: 80px 0;
             background-color: var(--light-gray);
@@ -679,7 +689,7 @@
             opacity: 0.8;
         }
         
-        /* Testimonials */
+       
         .testimonials {
             padding: 80px 0;
             background-color: var(--white);
@@ -762,7 +772,7 @@
             right: 30px;
         }
         
-        /* Mobile App Section */
+       
         .mobile-app {
             background: linear-gradient(135deg, #3B82F6, #1E40AF);
             padding: 80px 0;
@@ -825,7 +835,7 @@
             font-size: 16px;
         }
         
-        /* Footer */
+       
         footer {
             background: var(--gradient-blue);
             color: var(--white);
@@ -991,7 +1001,7 @@
             font-size: 18px;
         }
         
-        /* Cart Modal */
+      
         .modal {
             display: none;
             position: fixed;
@@ -1217,7 +1227,7 @@
             transform: translateY(-2px);
         }
         
-        /* Login Modal */
+        
         .login-form, .register-form {
             padding: 20px;
         }
@@ -1322,7 +1332,7 @@
             border-color: #EA4335;
         }
         
-        /* Toast Notification */
+      
         .toast {
             position: fixed;
             bottom: 30px;
@@ -1380,7 +1390,7 @@
             color: var(--dark-gray);
         }
         
-        /* Quick View Modal */
+      
         .product-quick-view {
             display: flex;
             gap: 30px;
@@ -1550,7 +1560,7 @@
             margin-right: 8px;
         }
         
-        /* Responsive Styles */
+     
         @media (max-width: 992px) {
             .offers-container {
                 grid-template-columns: 1fr;
@@ -1684,7 +1694,7 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -1711,7 +1721,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+   
     <section class="hero">
         <div class="container hero-content">
             <h1>Suas compras de mercado à um clique de distância</h1>
@@ -1728,13 +1738,13 @@
         </div>
     </section>
     
-    <!-- Search Bar -->
+   
     <div class="container search-container">
         <input type="text" class="search-bar" placeholder="O que você está procurando hoje?">
         <i class="fas fa-search search-icon"></i>
     </div>
 
-    <!-- Categories Section -->
+
     <section class="categories">
         <div class="container">
             <h2 class="section-title">Nossas Categorias</h2>
@@ -1908,7 +1918,7 @@
         </div>
     </section>
 
-    <!-- Quick View Modal -->
+  
     <div id="quickViewModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1949,7 +1959,7 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
+ 
     <div class="toast toast-success">
         <i class="fas fa-check-circle"></i>
         <div class="toast-message">Produto adicionado ao carrinho com sucesso!</div>
@@ -1959,7 +1969,7 @@
 
    
 
-    <!-- Special Offers -->
+   
     <section class="special-offers">
         <div class="container">
             <h2 class="section-title">Ofertas Especiais</h2>
@@ -1980,7 +1990,7 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
+  
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
@@ -2041,7 +2051,7 @@
         </div>
     </section>
 
-    <!-- Mobile App Section -->
+
     <section class="mobile-app">
         <div class="container">
             <div class="app-content">
@@ -2067,7 +2077,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -2128,7 +2138,7 @@
         </div>
     </footer>
 
-    <!-- Cart Modal -->
+
     <div id="cartModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -2141,7 +2151,7 @@
                     <p>Seu carrinho está vazio</p>
                     <a href="products.php" class="btn">Continue Comprando</a>
                 </div>
-                <!-- Cart items will be added here dynamically -->
+                
                 <ul class="cart-list" style="display: none;">
                     <li class="cart-item">
                         <div class="cart-item-image">🍎</div>
@@ -2184,7 +2194,7 @@
         </div>
     </div>
 
-    <!-- Login Modal -->
+   
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -2213,7 +2223,7 @@
         </div>
     </div>
 
-    <!-- Register Modal -->
+ 
     <div id="registerModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -2249,7 +2259,7 @@
         </div>
     </div>
 
-    <!-- Quick View Modal -->
+ 
     <div id="quickViewModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -2303,7 +2313,7 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
+  
     <div class="toast toast-success">
         <i class="fas fa-check-circle"></i>
         <div class="toast-message">Produto adicionado ao carrinho com sucesso!</div>
@@ -2311,32 +2321,32 @@
     </div>
 
     <script>
-        // Modal Controls
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Modal elements
+         
             const cartModal = document.getElementById('cartModal');
             const loginModal = document.getElementById('loginModal');
             const registerModal = document.getElementById('registerModal');
             const quickViewModal = document.getElementById('quickViewModal');
             
-            // Open buttons
+           
             const openCartBtn = document.getElementById('openCartModal');
             const openLoginBtn = document.getElementById('openLoginModal');
             const openRegisterBtn = document.getElementById('openRegisterModal');
             const quickViewBtns = document.querySelectorAll('.quick-view-btn');
             
-            // Close buttons
+      
             const closeButtons = document.querySelectorAll('.close-modal');
             const closeCartModalBtn = document.getElementById('closeCartModal');
             
-            // Switch buttons
+       
             const switchToRegisterBtn = document.getElementById('switchToRegister');
             const switchToLoginBtn = document.getElementById('switchToLogin');
             
-            // Add to cart buttons
+         
             const addToCartButtons = document.querySelectorAll('.add-to-cart');
             
-            // Show modals
+
             openCartBtn.addEventListener('click', function() {
                 cartModal.style.display = 'block';
             });
@@ -2355,7 +2365,7 @@
                 });
             });
             
-            // Close modals when clicking close button or outside modal
+            
             closeButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
                     cartModal.style.display = 'none';
@@ -2380,7 +2390,7 @@
                 }
             });
             
-            // Switch between login and register
+           
             if (switchToRegisterBtn) {
                 switchToRegisterBtn.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -2397,51 +2407,50 @@
                 });
             }
             
-            // Add to cart functionality
+           
             addToCartButtons.forEach(button => {
                 button.addEventListener('click', function() {
-                    // Here you would add the product to cart
-                    // For demo, we'll just show a toast
+                    
                     showToast('Produto adicionado ao carrinho com sucesso!', 'success');
-                    updateCartCount(1); // Increment cart count by 1
+                    updateCartCount(1); 
                 });
             });
             
-            // Toast notification functionality
+            
             function showToast(message, type = 'success') {
                 const toast = document.querySelector('.toast');
                 const toastMessage = document.querySelector('.toast-message');
                 const toastClose = document.querySelector('.toast-close');
                 
-                // Set message
+               
                 toastMessage.textContent = message;
                 
-                // Set type
+             
                 toast.className = 'toast';
                 toast.classList.add(`toast-${type}`);
                 
-                // Show toast
+              
                 toast.classList.add('show');
                 
-                // Auto hide after 3 seconds
+             
                 setTimeout(() => {
                     toast.classList.remove('show');
                 }, 3000);
                 
-                // Close on click
+              
                 toastClose.addEventListener('click', function() {
                     toast.classList.remove('show');
                 });
             }
             
-            // Update cart count
+           
             function updateCartCount(increment = 0) {
                 const cartCountElement = document.getElementById('cartCount');
                 let currentCount = parseInt(cartCountElement.textContent);
                 currentCount += increment;
                 cartCountElement.textContent = currentCount;
                 
-                // If cart has items, update cart view
+               
                 if (currentCount > 0 && increment > 0) {
                     document.querySelector('.empty-cart').style.display = 'none';
                     document.querySelector('.cart-list').style.display = 'block';
@@ -2451,7 +2460,7 @@
                 }
             }
             
-            // For demo purposes, let's show non-empty cart
+         
             updateCartCount(3);
         });
 
@@ -2463,7 +2472,7 @@
             const cartList = document.querySelector('.cart-list');
             const emptyCart = document.querySelector('.empty-cart');
 
-            // Função para abrir o modal de visualização rápida
+          
             document.querySelectorAll('.quick-view-btn').forEach(button => {
                 button.addEventListener('click', function() {
                     const title = this.getAttribute('data-title');
@@ -2476,17 +2485,17 @@
                     quickViewModal.querySelector('.product-description').textContent = description;
                     quickViewModal.querySelector('.qty-input').value = 1; // Reseta a quantidade
 
-                    // Exibe o modal
+                   
                     quickViewModal.style.display = 'block';
                 });
             });
 
-            // Adiciona ao carrinho
+          
             document.querySelectorAll('.add-to-cart').forEach(button => {
                 button.addEventListener('click', function() {
                     const productTitle = this.parentElement.querySelector('.product-name').textContent;
                     const productPrice = parseFloat(this.parentElement.querySelector('.product-price').textContent.replace('R$ ', '').replace(',', '.'));
-                    const quantity = 1; // Defina a quantidade padrão ou pegue do modal se você fizer um "Adicionar"
+                    const quantity = 1; 
                     
                     let itemIndex = cartItems.findIndex(item => item.title === productTitle);
                     if (itemIndex > -1) {
@@ -2496,7 +2505,7 @@
                             title: productTitle,
                             price: productPrice,
                             quantity: quantity,
-                            image: '🍎' // Placeholder: substitua pela imagem real se necessário
+                            image: '🍎' 
                         });
                     }
 
@@ -2535,13 +2544,13 @@
                         cartList.appendChild(li);
                     });
 
-                    // Adicionar funcionalidade para remover itens
+                  
                     const removeButtons = document.querySelectorAll('.remove-item');
                     removeButtons.forEach(button => {
                         button.addEventListener('click', function() {
                             const index = this.getAttribute('data-index');
-                            cartItems.splice(index, 1); // Remove o item do carrinho
-                            updateCart(); // Atualiza a exibição do carrinho
+                            cartItems.splice(index, 1); 
+                            updateCart(); 
                         });
                     });
                 }
@@ -2558,7 +2567,7 @@
                 }, 3000);
             }
 
-            // Fechar modal
+          
             const closeButtons = document.querySelectorAll('.close-modal');
             closeButtons.forEach(button => {
                 button.addEventListener('click', function() {
@@ -2603,7 +2612,6 @@
             const cartList = document.querySelector('.cart-list');
             const emptyCart = document.querySelector('.empty-cart');
 
-            // Função para abrir o modal de visualização rápida
             document.querySelectorAll('.quick-view-btn').forEach(button => {
                 button.addEventListener('click', function() {
                     const title = this.getAttribute('data-title');
@@ -2618,17 +2626,16 @@
                     quickViewModal.querySelector('.product-gallery').textContent = emoji; // Exibe o emoji correspondente
                     quickViewModal.querySelector('.qty-input').value = 1; // Reseta a quantidade
 
-                    // Exibe o modal
                     quickViewModal.style.display = 'block';
                 });
             });
 
-            // Adiciona ao carrinho
+         
             document.querySelectorAll('.add-to-cart').forEach(button => {
                 button.addEventListener('click', function() {
                     const productTitle = this.parentElement.querySelector('.product-name').textContent;
                     const productPrice = parseFloat(this.parentElement.querySelector('.product-price').textContent.replace('R$ ', '').replace(',', '.'));
-                    const quantity = 1; // Defina a quantidade padrão ou pegue do modal se você fizer um "Adicionar"
+                    const quantity = 1; 
                     
                     let itemIndex = cartItems.findIndex(item => item.title === productTitle);
                     if (itemIndex > -1) {
@@ -2638,7 +2645,7 @@
                             title: productTitle,
                             price: productPrice,
                             quantity: quantity,
-                            image: '🍎' // Placeholder: substitua pela imagem real se necessário
+                            image: '🍎' 
                         });
                     }
 
@@ -2677,13 +2684,13 @@
                         cartList.appendChild(li);
                     });
 
-                    // Adicionar funcionalidade para remover itens
+                   
                     const removeButtons = document.querySelectorAll('.remove-item');
                     removeButtons.forEach(button => {
                         button.addEventListener('click', function() {
                             const index = this.getAttribute('data-index');
-                            cartItems.splice(index, 1); // Remove o item do carrinho
-                            updateCart(); // Atualiza a exibição do carrinho
+                            cartItems.splice(index, 1); 
+                            updateCart(); 
                         });
                     });
                 }
@@ -2700,7 +2707,7 @@
                 }, 3000);
             }
 
-            // Fechar modal
+          
             const closeButtons = document.querySelectorAll('.close-modal');
             closeButtons.forEach(button => {
                 button.addEventListener('click', function() {
@@ -2718,6 +2725,154 @@
                 });
             });
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const cartItems = [];
+    const cartCountElement = document.getElementById('cartCount');
+    const cartModal = document.getElementById('cartModal');
+    const cartList = document.querySelector('.cart-list');
+    const emptyCart = document.querySelector('.empty-cart');
+
+   
+    document.querySelectorAll('.quick-view-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const title = this.getAttribute('data-title');
+            const price = this.getAttribute('data-price');
+            const description = this.getAttribute('data-description');
+            const emoji = this.getAttribute('data-emoji');
+
+            const quickViewModal = document.getElementById('quickViewModal');
+            quickViewModal.querySelector('.product-title').textContent = title;
+            quickViewModal.querySelector('.product-price-large').textContent = `R$ ${price}`;
+            quickViewModal.querySelector('.product-description').textContent = description;
+            quickViewModal.querySelector('.product-gallery').textContent = emoji; 
+            quickViewModal.querySelector('.qty-input').value = 1; 
+
+          
+            quickViewModal.style.display = 'block';
+        });
+    });
+
+    
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const productTitle = this.parentElement.querySelector('.product-name').textContent;
+            const productPrice = parseFloat(this.parentElement.querySelector('.product-price').textContent.replace('R$ ', '').replace(',', '.'));
+            const quantity = 1; 
+
+           
+            let itemIndex = cartItems.findIndex(item => item.title === productTitle);
+            if (itemIndex > -1) {
+               
+                cartItems[itemIndex].quantity += quantity;
+            } else {
+               
+                cartItems.push({
+                    title: productTitle,
+                    price: productPrice,
+                    quantity: quantity,
+                    image: '🍎' 
+                });
+            }
+
+            updateCart();
+            showToast(`Produto "${productTitle}" adicionado ao carrinho!`);
+        });
+    });
+
+    function updateCart() {
+        cartList.innerHTML = '';
+        if (cartItems.length === 0) {
+            emptyCart.style.display = 'block';
+            cartList.style.display = 'none';
+            cartCountElement.textContent = '0';
+        } else {
+            emptyCart.style.display = 'none';
+            cartList.style.display = 'block';
+            cartCountElement.textContent = cartItems.length;
+
+            cartItems.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.className = 'cart-item';
+
+                li.innerHTML = `
+                    <div class="cart-item-image">${item.image}</div>
+                    <div class="cart-item-details">
+                        <div class="cart-item-name">${item.title}</div>
+                        <div class="cart-item-price">R$ ${item.price.toFixed(2)}</div>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <span>Quantidade: ${item.quantity}</span>
+                    </div>
+                    <button class="remove-item" data-index="${index}"><i class="fas fa-trash"></i></button>
+                `;
+
+                cartList.appendChild(li);
+            });
+
+            
+            const removeButtons = document.querySelectorAll('.remove-item');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const index = this.getAttribute('data-index');
+                    cartItems.splice(index, 1); 
+                    updateCart(); 
+                });
+            });
+        }
+    }
+
+    function showToast(message) {
+        const toast = document.querySelector('.toast');
+        const toastMessage = document.querySelector('.toast-message');
+        toastMessage.textContent = message;
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+
+   
+    const closeButtons = document.querySelectorAll('.close-modal');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = button.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', function(event) {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});
     </script>
 </body>
 </html>
